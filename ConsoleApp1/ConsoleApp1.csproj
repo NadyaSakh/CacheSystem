@@ -42,11 +42,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DB\DBSQLServerUtils.cs" />
+    <Compile Include="DB\DBUtils.cs" />
+    <Compile Include="Cache\ICache.cs" />
+    <Compile Include="DB\InsertData.cs" />
+    <Compile Include="Cache\LFUCache.cs" />
+    <Compile Include="Cache\LFU\LFUDoubleLinkedList.cs" />
+    <Compile Include="Cache\LFU\LFUNode.cs" />
+    <Compile Include="Cache\LRUCache.cs" />
+    <Compile Include="Cache\LRU\LRUDoubleLinkedList.cs" />
+    <Compile Include="Cache\LRU\LRUNode.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
